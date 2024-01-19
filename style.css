@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'casino';
+    src: url('font/CasinoShadow.ttf') format('truetype');
+    /* Puedes agregar formatos adicionales si tu fuente los incluye, como woff, woff2, etc. */
+}
+
+
+body{
+    background-color: #000000;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.titulo{
+    font-family: 'casino', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.07em;
+    text-shadow: -7px 3px 0 #d80032;
+    margin-bottom: 3%;
+    display: inline-block;
+
+
+
+}
+
+.title img{
+    width: 20%;
+    height: 20%;
+}
+
+.title h2{
+    color: #ffffff;
+    font-family: 'casino', sans-serif;
+
+}
+
+.title input{
+    margin: 2%;
+    border: 1px solid #d80032;
+    padding: 4%;
+    background-color: #d80032;
+    color: #ffffff;
+    font-weight: bolder;
+    animation: vibrar 0.5s 10;
+
+    
+
+}
+
+@keyframes vibrar {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-1deg); }
+    50% { transform: translateX(5px) rotate(1deg); }
+    75% { transform: translateX(-5px) rotate(-1deg); }
+    100% { transform: translateX(5px) rotate(1deg); }
+}
+
+.title h3{
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #d80032, 0 0 70px #d80032, 0 0 80px #d80032, 0 0 100px #d80032, 0 0 150px #d80032;
+    animation: flicker 5s infinite alternate;
+    margin: 10%;
+    font-family: 'casino', sans-serif;
+
+
+}
+.title p{
+    color:#ffffff
+}
+@keyframes flicker {
+    0%, 100% {
+      text-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077, 0 0 30px #ff0077, 0 0 40px #d80032, 0 0 70px #d80032, 0 0 80px #d80032, 0 0 100px #d80032, 0 0 150px #d80032;
+    }
+    25%, 75% {
+      text-shadow: none;
+    }
+  }
